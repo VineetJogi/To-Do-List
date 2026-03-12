@@ -1,4 +1,4 @@
-h1{
+/* h1{
     text-align: center;
 }
 
@@ -59,4 +59,128 @@ h1{
     gap: 15px;
     width: 487.725px;
     align-items: center;
+} */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI, sans-serif;
+}
+
+body{
+background:#f4f6f9;
+color:#333;
+display:flex;
+flex-direction:column;
+align-items:center;
+min-height:100vh;
+}
+
+header{
+width:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:20px;
+padding:20px;
+background:white;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+#modeToggle{
+padding:8px 15px;
+font-size:18px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+background:#333;
+color:white;
+}
+
+.app{
+margin-top:40px;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.inputSection{
+display:flex;
+gap:10px;
+margin-bottom:25px;
+}
+
+.task{
+padding:10px;
+font-size:16px;
+width:250px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+.date{
+padding:10px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+.add{
+padding:10px 15px;
+background:#4CAF50;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+.add:hover{
+background:#3e9142;
+}
+
+.delete{
+padding:6px 12px;
+background:#e53935;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+.delete:hover{
+background:#c62828;
+}
+
+.container{
+display:grid;
+grid-template-columns: 200px 120px 120px 100px;
+gap:15px;
+align-items:center;
+}
+
+.taskCard{
+padding:10px;
+border-bottom:1px solid #eee;
+}
+
+/* Dark Mode */
+
+.dark{
+background:#121212;
+color:white;
+}
+
+.dark .app{
+background:#1e1e1e;
+}
+
+.dark header{
+background:#1e1e1e;
+}
+
+.dark input{
+background:#2c2c2c;
+color:white;
+border:1px solid #555;
 }
